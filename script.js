@@ -431,7 +431,7 @@ const webSkills = [
     color: "from-purple-500 to-blue-500",
   },
   {
-    name: "PHP",
+    name: "React",
     level: "Intermediate",
     percentage: 75,
     color: "from-green-500 to-purple-500",
