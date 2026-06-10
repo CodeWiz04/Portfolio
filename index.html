@@ -1174,7 +1174,7 @@
           </div>
 
           <div class="social-row">
-            <a href="https://github.com/CodeWiz04" target="_blank" class="social-btn" title="GitHub">
+    <a href="https://github.com/CodeWiz04" target="_blank" rel="noopener noreferrer" class="social-btn" title="GitHub">
               <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
             </a>
             <a href="https://www.linkedin.com/in/muhammad-shafan-7b0053308/" target="_blank" class="social-btn" title="LinkedIn">
@@ -1220,80 +1220,80 @@
 const projects = [
   {
     id: 1,
-    title: "EnrollX",
-    category: "Full-Stack Web App",
-    badge: "🌐",
-    level: "MISSION: ALPHA",
-    description: "A comprehensive course registration platform with full frontend and backend functionality, secure database integration, and real-time enrollment management. Built with modern web stack.",
-    longDesc: "EnrollX is a full-stack course registration system built for university environments. It features a React-powered frontend, Node.js backend, and a T-SQL database layer for robust data handling. Students can browse, register, and drop courses while administrators manage class capacities and schedules.",
-    tags: ["HTML", "CSS", "React", "Node.js", "T-SQL", "REST API"],
-    features: ["Student course enrollment & management", "Admin dashboard with analytics", "Real-time seat availability updates", "Secure authentication flow", "Responsive cross-device UI"],
-    github: "https://github.com/CodeWiz04/EnrollX",
+    title: "AI Resume Screener",
+    category: "AI / Machine Learning",
+    badge: "🤖",
+    level: "MISSION: AI-CORE",
+    description: "An intelligent resume screening system built in Python that automatically parses, ranks, and scores resumes against job descriptions using NLP and ML techniques.",
+    longDesc: "AI Resume Screener automates the hiring pipeline by using NLP to extract key entities from resumes (skills, education, experience) and rank candidates against a given job description. Built with Python, it uses text similarity models and scoring heuristics to surface the best-fit candidates — saving hours of manual review.",
+    tags: ["Python", "NLP", "Machine Learning", "Resume Parsing", "Streamlit"],
+    features: ["Automated resume text extraction & parsing", "NLP-based skill and entity recognition", "Job description vs. resume similarity scoring", "Candidate ranking & shortlisting", "Clean UI built with Streamlit"],
+    github: "https://github.com/CodeWiz04/AI-Resume-Screener",
     live: null
   },
   {
     id: 2,
-    title: "Maze Runner",
-    category: "System Programming",
-    badge: "🎮",
-    level: "MISSION: LOW-LEVEL",
-    description: "A challenging maze runner game developed entirely in Assembly Language (x86), demonstrating low-level memory management, graphics rendering, and game-loop implementation.",
-    longDesc: "A fully playable maze game written in x86 Assembly for DOS. Demonstrates direct memory-mapped graphics, keyboard interrupt handling, and complex state management at the hardware level — with zero reliance on high-level abstractions.",
-    tags: ["Assembly x86", "System Programming", "DOS", "Game Logic"],
-    features: ["Custom maze generation algorithm", "Direct video memory (VGA) rendering", "Keyboard interrupt handling", "Score & lives tracking", "Collision detection at memory level"],
-    github: "https://github.com/CodeWiz04/Maze-Runner-Game",
+    title: "PaperTrap",
+    category: "ML Research / NLP",
+    badge: "🧪",
+    level: "MISSION: DETECTION",
+    description: "An ensemble ML system to detect AI-generated fake research papers by analyzing linguistic, statistical, and stylometric signals — combating academic fraud with AI itself.",
+    longDesc: "PaperTrap is a full-stack ML pipeline (Python + HTML frontend) that distinguishes real ArXiv papers from Gemini-generated fakes. It uses stylometric feature extraction, linguistic pattern analysis, and an ensemble classifier. The dataset was built by downloading 250 real papers and generating 250 AI fakes using the Gemini API — a true end-to-end research project.",
+    tags: ["Python", "NLP", "Ensemble ML", "Stylometry", "Gemini API", "HTML/JS"],
+    features: ["Dataset of 500 real vs AI-generated papers", "Linguistic & stylometric feature engineering", "Ensemble classifier (multi-model voting)", "Gemini API integration for fake paper generation", "Full frontend + backend architecture"],
+    github: "https://github.com/CodeWiz04/paper_trap",
     live: null
   },
   {
     id: 3,
-    title: "Chess Engine",
-    category: "C++ OOP",
-    badge: "♟️",
-    level: "MISSION: STRATEGY",
-    description: "A fully playable two-player chess game implementing complete OOP principles — inheritance, polymorphism, encapsulation — with all standard rules including castling and en passant.",
-    longDesc: "A terminal-based chess game written in modern C++ leveraging the full power of OOP. Every piece is a class inheriting from a base Piece, with polymorphic move validation. Features complete rule enforcement including special moves.",
-    tags: ["C++", "OOP", "Polymorphism", "Inheritance", "Game Logic"],
-    features: ["All standard chess rules enforced", "Polymorphic piece design (12 classes)", "Check/checkmate detection", "Castling &amp; en passant support", "Terminal-based board rendering"],
-    github: "https://github.com/CodeWiz04/Two-Player-Chess-Game",
+    title: "ConverseAI Backend",
+    category: "AI Backend / Django",
+    badge: "💬",
+    level: "MISSION: BACKEND",
+    description: "A Django-powered backend for a conversational AI platform — featuring chatbot APIs, auto-scheduler, and a Python/JS stack with 46 commits of active development.",
+    longDesc: "ConverseAI is a collaborative AI chat platform backend built on Django. It handles user sessions, chatbot conversation routing, and an automated scheduler for message handling. The codebase mixes Python (Django), JavaScript, and CSS — structured with proper app separation and environment management.",
+    tags: ["Python", "Django", "JavaScript", "CSS", "REST API", "AI Integration"],
+    features: ["Django REST API for chat sessions", "Auto-scheduler for AI message handling", "Chatbot backend routing engine", "Multi-app Django architecture", "Environment-based config management"],
+    github: "https://github.com/CodeWiz04/converseAI-backend",
     live: null
   },
   {
     id: 4,
-    title: "Bejeweled Blitz",
-    category: "Game Development",
-    badge: "💎",
-    level: "MISSION: GENESIS",
-    description: "A fully functional Bejeweled Blitz clone — built as a first-semester Programming Fundamentals project. Demonstrates gem matching, cascading combos, and a scoring system.",
-    longDesc: "Built in semester 1 as a Programming Fundamentals project, this Bejeweled Blitz clone showcases rapid learning of C++ and game logic. Features a complete match-3 engine with cascading animations, score multipliers, and timed gameplay.",
-    tags: ["C++", "Game Development", "Algorithms", "Data Structures"],
-    features: ["Match-3 engine with cascades", "Score multiplier system", "Timer-based gameplay", "Gem swap & validation logic", "ASCII-based visual rendering"],
-    github: "https://github.com/CodeWiz04/Bejeweled-Blitz-Game",
+    title: "EnrollX",
+    category: "Full-Stack Web App",
+    badge: "🌐",
+    level: "MISSION: FULL-STACK",
+    description: "A full-stack course registration platform with React frontend, Node.js backend, and T-SQL database — enabling students to browse, enroll, and manage courses seamlessly.",
+    longDesc: "EnrollX is a university-grade course registration system. The React frontend provides an intuitive enrollment UX while the Node.js + T-SQL backend handles capacity management, authentication, and real-time availability. Built as a major semester project demonstrating full-stack architecture.",
+    tags: ["React", "Node.js", "T-SQL", "HTML/CSS", "REST API", "Database"],
+    features: ["Student course enrollment & drop system", "Real-time seat availability tracking", "Admin dashboard for course management", "Secure login & session handling", "Responsive mobile-friendly design"],
+    github: "https://github.com/CodeWiz04/EnrollX",
     live: null
   },
   {
     id: 5,
-    title: "AI Chatbot (NLP)",
-    category: "Machine Learning",
-    badge: "🤖",
-    level: "MISSION: NEURAL",
-    description: "A conversational AI chatbot built with Python and NLP techniques — intent classification, entity recognition, and context-aware response generation using ML models.",
-    longDesc: "A Python-based chatbot leveraging NLP pipelines including tokenization, intent classification via Naive Bayes / SVM, and named entity recognition. Demonstrates practical ML deployment from data collection through model serving.",
-    tags: ["Python", "NLTK", "Scikit-Learn", "NLP", "ML"],
-    features: ["Intent classification with SVM", "Named entity recognition", "Training data management", "Context-aware responses", "CLI + extendable API interface"],
-    github: "https://github.com/CodeWiz04",
+    title: "Text Summarizer",
+    category: "NLP / Transformers",
+    badge: "📝",
+    level: "MISSION: NLP",
+    description: "A Streamlit web app using Hugging Face Transformer models (BART, T5) to generate abstractive summaries from long passages with user-defined length controls.",
+    longDesc: "Text Summarizer is a production-ready NLP app powered by Hugging Face's summarization pipeline. Users paste any long-form text, set min/max summary length, and get a clean abstractive summary generated by state-of-the-art models like BART and T5. Built with Streamlit for instant deployment.",
+    tags: ["Python", "Streamlit", "Hugging Face", "Transformers", "BART", "T5", "NLP"],
+    features: ["Abstractive summarization with BART/T5/LED", "User-defined min & max summary length", "Clean Streamlit web interface", "Hugging Face pipeline integration", "Supports long-form documents & articles"],
+    github: "https://github.com/CodeWiz04/Text-Summarizer",
     live: null
   },
   {
     id: 6,
-    title: "Data Analysis Suite",
-    category: "Data Science",
-    badge: "📊",
-    level: "MISSION: INSIGHT",
-    description: "A Python data analysis toolkit featuring exploratory data analysis, statistical modeling, and rich visualizations built with Pandas, NumPy, Matplotlib and Seaborn.",
-    longDesc: "A collection of Jupyter notebooks and Python scripts for EDA, feature engineering, and statistical analysis. Covers real-world datasets with end-to-end analysis pipelines — from raw ingestion to actionable insight visualizations.",
-    tags: ["Python", "Pandas", "NumPy", "Matplotlib", "Seaborn", "Jupyter"],
-    features: ["EDA pipelines for tabular data", "Statistical hypothesis testing", "Interactive visualizations", "Feature correlation heatmaps", "Clean reporting notebooks"],
-    github: "https://github.com/CodeWiz04",
+    title: "Question Answer App",
+    category: "NLP / Deep Learning",
+    badge: "❓",
+    level: "MISSION: QA-SYSTEM",
+    description: "An extractive QA system using DistilBERT fine-tuned on SQuAD — users paste a passage, ask a question, and the Transformer model pinpoints the exact answer span.",
+    longDesc: "This Streamlit app demonstrates extractive question answering using Hugging Face's Transformers library. A DistilBERT model fine-tuned on SQuAD reads any passage and locates the precise answer to a user's question. It showcases real-world deployment of pre-trained deep learning models for NLP tasks.",
+    tags: ["Python", "Streamlit", "DistilBERT", "SQuAD", "Hugging Face", "PyTorch"],
+    features: ["Extractive QA with DistilBERT-SQuAD", "Passage + question dual-input interface", "Precise answer span extraction", "Hugging Face Transformers pipeline", "Extendable to multilingual models"],
+    github: "https://github.com/CodeWiz04/Question-Answer-App",
     live: null
   }
 ];
@@ -1314,7 +1314,7 @@ projects.forEach((p, i) => {
       <div class="project-desc">${p.description}</div>
       <div class="project-tags">${p.tags.map(t=>`<span class="project-tag">${t}</span>`).join('')}</div>
       <div class="project-card-actions">
-        <a href="${p.github}" target="_blank" class="project-btn github">
+        <a href="${p.github}" target="_blank" rel="noopener noreferrer" class="project-btn github">
           <svg width="14" height="14" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
           GitHub
         </a>
@@ -1324,6 +1324,27 @@ projects.forEach((p, i) => {
   `;
   grid.appendChild(card);
 });
+
+// ─── EXPLORE MORE BUTTON ───
+const exploreWrap = document.createElement('div');
+exploreWrap.style.cssText = 'grid-column:1/-1;display:flex;flex-direction:column;align-items:center;gap:1rem;margin-top:1rem;padding:2rem;background:var(--card);border:1px dashed rgba(15,244,198,0.25);border-radius:16px;text-align:center;';
+exploreWrap.innerHTML = `
+  <div style="font-size:1.75rem;">🗂️</div>
+  <div style="font-family:'Orbitron',sans-serif;font-size:0.85rem;color:var(--text);font-weight:700;">More missions in the archive</div>
+  <div style="font-size:0.85rem;color:var(--muted);max-width:360px;line-height:1.6;">Chess engine, Maze Runner in Assembly, Bejeweled Blitz + more — all documented and open-source.</div>
+  <a
+    href="https://github.com/CodeWiz04?tab=repositories"
+    target="_blank"
+    rel="noopener noreferrer"
+    style="display:inline-flex;align-items:center;gap:0.6rem;margin-top:0.5rem;padding:0.75rem 1.75rem;border-radius:10px;border:1px solid rgba(15,244,198,0.35);color:var(--cyan);background:rgba(15,244,198,0.06);font-family:'Orbitron',sans-serif;font-size:0.72rem;font-weight:700;letter-spacing:0.08em;text-decoration:none;transition:all 0.2s;"
+    onmouseover="this.style.background='rgba(15,244,198,0.15)';this.style.boxShadow='0 0 20px rgba(15,244,198,0.2)';"
+    onmouseout="this.style.background='rgba(15,244,198,0.06)';this.style.boxShadow='none';"
+  >
+    <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+    Explore All Projects on GitHub →
+  </a>
+`;
+grid.appendChild(exploreWrap);
 
 // ─── MODAL ───
 function openModal(idx) {
@@ -1335,7 +1356,7 @@ function openModal(idx) {
   const featList = document.getElementById('modal-features');
   featList.innerHTML = p.features.map(f=>`<li style="padding:0.4rem 0;border-bottom:1px solid rgba(255,255,255,0.04);color:var(--muted);font-size:0.875rem;display:flex;gap:0.5rem;align-items:flex-start;"><span style="color:var(--cyan);flex-shrink:0;">▸</span>${f}</li>`).join('');
   const actions = document.getElementById('modal-actions');
-  actions.innerHTML = `<a href="${p.github}" target="_blank" class="modal-btn primary">View on GitHub ↗</a>${p.live?`<a href="${p.live}" target="_blank" class="modal-btn secondary">Live Demo ↗</a>`:''}`;
+  actions.innerHTML = `<a href="${p.github}" target="_blank" rel="noopener noreferrer" class="modal-btn primary">View on GitHub ↗</a>${p.live?`<a href="${p.live}" target="_blank" rel="noopener noreferrer" class="modal-btn secondary">Live Demo ↗</a>`:''}`;
   document.getElementById('project-modal').classList.add('open');
   document.body.style.overflow = 'hidden';
 }
