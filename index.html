@@ -1142,13 +1142,13 @@
           <p class="section-desc">Ready to collaborate, discuss AI projects, or just geek out about machine learning? Let's talk.</p>
 
           <div class="contact-grid">
-            <a href="mailto:muhammadshafan2004@gmail.com" class="contact-card">
+            <div class="contact-card" style="cursor:pointer;" onclick="copyEmail(this)" title="Click to copy email">
               <div class="contact-icon" style="background:rgba(15,244,198,0.1);color:var(--cyan);">📧</div>
               <div>
-                <div class="contact-label">Email</div>
+                <div class="contact-label">Email <span id="copy-hint" style="font-size:0.65rem;color:var(--muted);margin-left:0.4rem;">(click to copy)</span></div>
                 <div class="contact-value">muhammadshafan2004@gmail.com</div>
               </div>
-            </a>
+            </div>
             <a href="tel:+923241503924" class="contact-card">
               <div class="contact-icon" style="background:rgba(123,47,255,0.1);color:var(--violet);">📱</div>
               <div>
@@ -1182,15 +1182,15 @@
             <a href="https://twitter.com/shafan2004" target="_blank" class="social-btn" title="Twitter/X">
               <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.744l7.737-8.835L1.254 2.25H8.08l4.259 5.631 5.905-5.631zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
             </a>
-            <a href="mailto:muhammadshafan2004@gmail.com" class="social-btn" title="Email">
+            <button class="social-btn" title="Copy Email" onclick="copyEmail(this)" style="background:none;border:none;cursor:pointer;">
               <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
-            </a>
+            </button>
           </div>
 
           <div style="margin-top:3rem;">
-            <a href="mailto:muhammadshafan2004@gmail.com" class="btn-primary" style="display:inline-flex;align-items:center;gap:0.5rem;">
-              ⚡ Send Message
-            </a>
+            <button onclick="copyEmail(this)" class="btn-primary" style="display:inline-flex;align-items:center;gap:0.5rem;border:none;cursor:pointer;font-family:inherit;">
+              ⚡ Copy Email Address
+            </button>
           </div>
         </div>
       </div>
@@ -1557,6 +1557,19 @@ document.querySelectorAll('a[href^="#"]').forEach(a => {
     }
   });
 });
+
+// ─── COPY EMAIL ───
+function copyEmail(el) {
+  const email = 'muhammadshafan2004@gmail.com';
+  navigator.clipboard.writeText(email).then(() => {
+    const hint = document.getElementById('copy-hint');
+    if(hint) { hint.textContent = '✓ Copied!'; hint.style.color = 'var(--cyan)'; setTimeout(() => { hint.textContent = '(click to copy)'; hint.style.color = ''; }, 2000); }
+    triggerAchievement('📋|Email Copied!');
+  }).catch(() => {
+    // fallback: open mailto
+    window.location.href = 'mailto:muhammadshafan2004@gmail.com';
+  });
+}
 
 // ─── LOADER ───
 window.addEventListener('load', () => {
